@@ -1,8 +1,7 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [],
-
   darkMode: 'class',
-
   safelist: [
     {
       pattern: /text-(red|green|blue)-(100|400)/,
@@ -13,9 +12,7 @@ module.exports = {
       variants: ['group-hover']
     }
   ],
-
   theme: {
-
     screens: {
       xs: "614px",
       sm: "1002px",
@@ -23,9 +20,7 @@ module.exports = {
       lg: "1092px",
       xl: "1280px",
     },
-
     extend: {
-
       colors: {
         dim: {
           50: "#5F99F7",
@@ -40,11 +35,9 @@ module.exports = {
           900: "#15202b",
         },
       },
-
     },
   },
-
   plugins: [
-    require('@tailwindcss/forms')
+    // require('@tailwindcss/forms')
   ],
 }
