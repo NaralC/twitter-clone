@@ -1,7 +1,6 @@
-const useTailwindConfig = () => {
+export default () => {
   return {
     defaultTransition: "transition-all ease-in-out duration-350",
-  };
-};
-
-export default useTailwindConfig;
+    twitterBorderColor: "border-white dark:border-gray-700"
+  }
+}

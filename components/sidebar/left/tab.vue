@@ -9,7 +9,7 @@ const props = defineProps({
 });
 
 const textClasses = computed(() =>
-  props.active ? "font-bold underline text-blue-500 dark:text-sky-500" : "font-normal"
+  props.active ? "font-bold underline text-blue-500 dark:text-sky-500" : "font-semibold"
 );
 
 const iconClasses = computed(() =>
@@ -20,7 +20,7 @@ const iconClasses = computed(() =>
 <template>
   <nuxt-link
     to="#"
-    class="flex items-center p-3 text-black rounded-full w-min hover:bg-gray-200 dark:hover:bg-dim-200 dark:text-white saturate-150 text-"
+    class="flex items-center p-3 text-black rounded-full w-min hover:bg-gray-200 dark:hover:bg-dim-200 dark:text-white saturate-150"
     :class="defaultTransition"
   >
     <div class="w-6 h-6 mb-[6px] text-dark" :class="iconClasses">

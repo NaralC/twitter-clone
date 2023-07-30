@@ -32,7 +32,7 @@ const { defaultTransition } = useTailwindConfig();
         </template>
         <template v-slot:name> Home </template>
       </SidebarLeftTab>
-      <SidebarLeftTab>
+      <SidebarLeftTab active>
         <template v-slot:icon>
           <Icon
             name="fluent-emoji-high-contrast:keycap-hashtag"
@@ -41,7 +41,13 @@ const { defaultTransition } = useTailwindConfig();
         </template>
         <template v-slot:name> Explore </template>
       </SidebarLeftTab>
-      <SidebarLeftTab active>
+      <SidebarLeftTab>
+        <template v-slot:icon>
+          <Icon name="material-symbols:notifications-active-rounded" class="w-8 h-8" />
+        </template>
+        <template v-slot:name> Notifications </template>
+      </SidebarLeftTab>
+      <SidebarLeftTab>
         <template v-slot:icon>
           <Icon name="fluent-emoji-high-contrast:inbox-tray" class="w-8 h-8" />
         </template>
